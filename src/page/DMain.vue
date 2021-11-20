@@ -28,11 +28,11 @@
 						<a href="#">
 							<i class="anticon"></i>
 						</a>
-					</li>			
-					
+					</li>
+
 				</ul>
 				<ul class="nav-right">
-					
+
 					<li class="dropdown dropdown-animated scale-left">
 						<div class="pointer" data-toggle="dropdown">
 							<div class="avatar avatar-image bg-primary  m-h-10 m-r-15">
@@ -53,7 +53,7 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<a href="javascript:void(0);" class="dropdown-item d-block p-h-15 p-v-10">
 								<div class="d-flex align-items-center justify-content-between">
 									<div>
@@ -65,10 +65,10 @@
 							</a>
 						</div>
 					</li>
-						
+
 				</ul>
 			</div>
-		</div>    
+		</div>
 		<!-- Header END -->
 
 		<!-- Side Nav START -->
@@ -82,7 +82,7 @@
 							</span>
 							<span class="title">Список</span>
 						</a>
-					</li>                        
+					</li>
 					<li class="nav-item">
 						<a href="users.html">
 							<span class="icon-holder">
@@ -105,16 +105,16 @@
 							<li class="nav-item">
 								<a href="activity.html">
 									<span>Сфера деятельность</span>
-								</a>                                   
+								</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a href="#">
 									<span>Тарификация</span>
-								</a>                                   
+								</a>
 							</li>
 						</ul>
 					</li>
-					
+
 				</ul>
 			</div>
 		</div>
@@ -122,12 +122,12 @@
 
 		<!-- Page Container START -->
 		<div class="page-container">
-			
+
 			<!-- Content Wrapper START -->
 			<div class="main-content">
 				<div class="page-header">
 					<h2 class="header-title p-l-25">Диаграмма</h2>
-					
+
 				</div>
 				<!-- Content goes Here -->
 				<div class="card">
@@ -149,7 +149,7 @@
 										</ul>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="col-md-6 mb-4">
 								<div class="row">
@@ -165,21 +165,21 @@
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 				<div class="card">
 					<div class="card-body">
 						<div id="invoice" class="">
 							<div class="m-t-15 lh-2">
-								<h4>Информация</h4> 
+								<h4>Информация</h4>
 							</div>
 							<p>DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, built upon the foundations of progressive enhancement, that adds all of these advanced features to any HTML table. Below is an example of zero configuration.</p>
 							<div class="d-flex justify-content-end m-b-30">
 								<a href="add_edit_company.html" class="btn btn-primary">
 									<i class="anticon anticon-plus-circle m-r-5"></i>
 									<span>Добавить</span>
-								</a>                                    
+								</a>
 							</div>
 							<div class="m-t-25">
 								<table id="data-table" class="table table table-striped table-responsive-md clientList">
@@ -464,7 +464,7 @@
 												</a>
 											</td>
 										</tr>
-										
+
 									</tbody>
 									<tfoot>
 										<tr data-name="" data-id="1">
@@ -481,14 +481,14 @@
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 			<!-- Content Wrapper END -->
 
 			<!-- Footer START -->
 			<footer class="footer">
 				<div class="footer-content">
-					<p class="m-b-0 mx-auto">Информация© 2021 ОшГУ | Development © 2020 OshSU - IT Academy</p>                        
+					<p class="m-b-0 mx-auto">Информация© 2021 ОшГУ | Development © 2020 OshSU - IT Academy</p>
 				</div>
 			</footer>
 			<!-- Footer END -->
@@ -521,7 +521,7 @@
 		</div>
 
 	</div>
-	
+
 </template>
 
 <script>
