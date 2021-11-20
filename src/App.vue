@@ -1,16 +1,19 @@
 <template>
-  <div id="app">
-    <Login/>
+  <div id="app" class="app is-primary">
+    <!-- <DLogin /> -->
+    <DMain />
   </div>
 </template>
 
 <script>
-import Login from './page/Login.vue'
+// import DLogin from './page/Login.vue'
+import DMain from './page/DMain.vue'
 
 export default {
   name: 'App',
   components: {
-    Login
+    // Login,
+    DMain
   }
 }
 </script>

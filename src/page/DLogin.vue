@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<div class="container-fluid p-h-0 p-v-20 bg full-height d-flex" :style="{'background-image': 'url('+ require('../assets/images/others/login-3.png')+')'}">
+	<div class="loginPage bg">
+		<div class="container-fluid p-h-0 p-v-20 full-height d-flex">
 			<div class="d-flex flex-column justify-content-between w-100">
 				<div class="container d-flex h-100">
 					<div class="row align-items-center w-100">
@@ -8,7 +8,7 @@
 							<div class="card shadow-lg">
 								<div class="card-body">
 									<div class="d-flex align-items-center justify-content-between m-b-30">
-										<img class="img-fluid" alt="" src="../assets/images/logo/Coat_of_Osh_65.png">
+										<img class="logo" alt="" src="../assets/images/logo/logo_s3.svg">
 										<h2 class="m-b-0">Авторизация</h2>
 									</div>
 									<form action="list.html">
@@ -29,7 +29,6 @@
 										</div>
 										<div class="form-group">
 											<div class="d-flex align-items-center justify-content-center">
-
 												<button type="submit" class="btn btn-primary">Вход</button>
 											</div>
 										</div>
@@ -53,5 +52,5 @@
 </script>
 
 <style lang="scss" scoped>
-
+	
 </style>

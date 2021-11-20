@@ -4,6 +4,7 @@ import App from './App.vue'
 Vue.config.productionTip = false
 
 import '@/assets/css/app.min.css'
+import '@/assets/scss/main.scss'
 
 new Vue({
   render: h => h(App),
