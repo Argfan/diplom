@@ -1,7 +1,9 @@
 <template>
-  <div id="app" class="app is-primary">
+  <div id="app" class="app is-primary" :class="{ 'is-folded':  isfolded}">
     <!-- <DLogin /> -->
-    <DMain />
+    <DMain 
+      @isFoldOn="isFoldOn"
+    />
   </div>
 </template>
 
@@ -14,6 +16,17 @@ export default {
   components: {
     // Login,
     DMain
+  },
+  data(){
+    return{
+      isfolded: false
+    }    
+  },
+  methods: {
+    isFoldOn(f){
+      this.isfolded = f 
+      console.log(f);
+    }
   }
 }
 </script>

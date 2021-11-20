@@ -47,7 +47,23 @@
 	.logo {
 		line-height: 60px;
 		img{
-			width: 100px;			
+			width: 100px;					
+		}
+	}
+}
+.is-folded{
+	.mainPage{	
+		.header .logo>a{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+		.logo {
+			line-height: 60px;
+			img{
+				width: 50px;			
+			}
 		}
 	}
 }

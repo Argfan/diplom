@@ -8,24 +8,24 @@
 					<!-- <img src="assets/images/logo/logo.png" alt="Logo">
 					<img class="logo-fold" src="assets/images/logo/logo-fold.png" alt="Logo"> -->
 					<img src="../assets/images/logo/logo_s3.svg" alt="Logo">
-					<img class="logo-fold" src="assets/images/logo/Coat_of_Osh_65-2.png" alt="Logo">
+					<img class="logo-fold" src="../assets/images/logo/logo_s3_fold.svg" alt="Logo">
 				</a>
 			</div>
 			<div class="logo logo-white">
 				<a href="index.html">
 					<img src="../assets/images/logo/logo_s3_white.svg" alt="Logo">
-					<img class="logo-fold" src="assets/images/logo/Coat_of_Osh_65-2.png" alt="Logo">
+					<img class="logo-fold" src="../assets/images/logo/logo_s3_fold_white.svg" alt="Logo">
 				</a>
 			</div>
 			<div class="nav-wrap">
 				<ul class="nav-left">
 					<li class="desktop-toggle">
-						<a href="javascript:void(0);">
+						<a href="#" @click.prevent="isFoldOn">
 							<i class="anticon"></i>
 						</a>
 					</li>
 					<li class="mobile-toggle">
-						<a href="javascript:void(0);">
+						<a href="#">
 							<i class="anticon"></i>
 						</a>
 					</li>			
@@ -526,7 +526,18 @@
 
 <script>
 	export default {
-		name: "Main"
+		name: "Main",
+		data(){
+			return{
+				isFold: false
+			}
+		},
+		methods: {
+			isFoldOn(){
+				this.isFold =!this.isFold
+				this.$emit('isFoldOn', this.isFold)
+			}
+		}
 	}
 </script>
 
