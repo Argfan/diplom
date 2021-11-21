@@ -1,8 +1,8 @@
 <template>
-  <div id="app" class="app is-primary" :class="{ 'is-folded':  isfolded}">
+  <div id="app" class="app is-primary" :class="{ 'is-folded':  ISFOLDED}">
     <!-- <DLogin /> -->
     <DMain 
-      @isFoldOn="isFoldOn"
+      
     />
   </div>
 </template>
@@ -10,7 +10,7 @@
 <script>
 // import DLogin from './page/Login.vue'
 import DMain from './page/DMain.vue'
-
+import {mapGetters} from 'vuex'
 export default {
   name: 'App',
   components: {
@@ -19,15 +19,16 @@ export default {
   },
   data(){
     return{
-      isfolded: false
+     
     }    
   },
-  methods: {
-    isFoldOn(f){
-      this.isfolded = f 
-      console.log(f);
+ 
+  computed: {
+      ...mapGetters([
+        'ISFOLDED'
+      ])
+      
     }
-  }
 }
 </script>
 

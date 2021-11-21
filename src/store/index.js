@@ -8,11 +8,15 @@ export default new Vuex.Store({
     isFolded: false,
   },
   mutations: {
-    SET_ISFOLDED(state, data) {
+    SET_ISFOLDED: (state, data) => {
       state.isFolded = data;
     },
   },
-  actions: {},
+  actions: {
+    ISFOLDED_CHANGE({ commit }, data) {
+      commit("SET_ISFOLDED", data);
+    },
+  },
   getters: {
     ISFOLDED(state) {
       return state.isFolded;
