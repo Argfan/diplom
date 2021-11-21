@@ -1,39 +1,26 @@
 <template>
-  <div id="app" class="app is-primary" :class="{ 'is-folded':  ISFOLDED}">
-    <!-- <DLogin /> -->
-    <DMain 
-      
-    />
+  <div id="app" 
+    class="app is-primary" 
+    :class="{ 'is-folded':  ISFOLDED}"
+  >
+    asdfsd
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-// import DLogin from './page/Login.vue'
-import DMain from './page/DMain.vue'
 import {mapGetters} from 'vuex'
+
 export default {
-  name: 'App',
-  components: {
-    // Login,
-    DMain
-  },
-  data(){
-    return{
-     
-    }    
-  },
- 
+  name: 'App', 
   computed: {
-      ...mapGetters([
-        'ISFOLDED'
-      ])
-      
-    }
+    ...mapGetters([
+      'ISFOLDED'
+    ])    
+  }
 }
 </script>
 
 <style lang="scss">
-  #app {
 
-  }
 </style>

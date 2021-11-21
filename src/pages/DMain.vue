@@ -1,4 +1,3 @@
-
 <template>
   <div class="mainPage">
     <!-- Header START -->
@@ -529,14 +528,11 @@
 import {mapActions, mapGetters} from 'vuex'
   
   export default {
-    name: "Main",
+    name: "DMain",
     data(){
       return{
         isFold: this.ISFOLDED
       }
-    },
-    mounted(){      
-        // this.isFold = this.ISFOLDED
     },
     computed: {
       ...mapGetters([
@@ -546,17 +542,12 @@ import {mapActions, mapGetters} from 'vuex'
     methods: {
       ...mapActions([
         'ISFOLDED_CHANGE'
-      ]),
-      
+      ]),      
       isFoldOn(){
-        console.log(this.isFold);
         this.isFold =!this.isFold
-        console.log(this.isFold);
         this.ISFOLDED_CHANGE(this.isFold)
       }
     },
-    
-    
   }
 </script>
 
