@@ -6,6 +6,10 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     isFolded: false,
+    user: {
+      login: 'admin',
+      password: '123'
+    }
   },
   mutations: {
     SET_ISFOLDED: (state, data) => {
@@ -18,8 +22,11 @@ export default new Vuex.Store({
     },
   },
   getters: {
-    ISFOLDED(state) {
+    ISFOLDED(state){
       return state.isFolded;
     },
+    USER_GET(state){
+      return state.user
+    }
   },
 });

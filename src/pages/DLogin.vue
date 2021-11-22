@@ -16,7 +16,7 @@
                       <label class="font-weight-semibold" for="userName">Имя пользователя:</label>
                       <div class="input-affix">
                         <i class="prefix-icon anticon anticon-user"></i>
-                        <input type="text" class="form-control" id="userName" placeholder="Логин">
+                        <input type="text" class="form-control" id="userName" placeholder="Логин" v-model="user.login">
                       </div>
                     </div>
                     <div class="form-group">
@@ -24,12 +24,13 @@
                       <!-- <a class="float-right font-size-13 text-muted" href="">Forget Password?</a> -->
                       <div class="input-affix m-b-10">
                         <i class="prefix-icon anticon anticon-lock"></i>
-                        <input type="password" class="form-control" id="password" placeholder="*****">
+                        <input type="password" class="form-control" id="password" placeholder="*****" v-model="user.password">
                       </div>
                     </div>
                     <div class="form-group">
                       <div class="d-flex align-items-center justify-content-center">
-                        <button type="submit" class="btn btn-primary">Вход</button>
+                        <!-- <button type="submit" class="btn btn-primary">Вход</button> -->
+                        <router-link type="submit" class="btn btn-primary" :to="{name: 'main'}">Вход</router-link>
                       </div>
                     </div>
                   </form>
@@ -46,8 +47,22 @@
 </template>
 
 <script>
+  import {mapGetters} from 'vuex'
   export default {
-    name: 'DLogin'
+    name: 'DLogin',
+    data(){
+      return{
+        user: {
+          login: '',
+          password: ''
+        }
+      }
+    },
+    comtuted: {
+      ...mapGetters([
+        'USER_GET'
+      ])
+    }
   }
 </script>
 

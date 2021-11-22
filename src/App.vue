@@ -3,8 +3,7 @@
     class="app is-primary" 
     :class="{ 'is-folded':  ISFOLDED}"
   >
-    asdfsd
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 
