@@ -71,3 +71,35 @@
 		}
 	}
 }
+
+
+.route-enter-active{
+	animation: coming .15s;
+	opacity: 0;
+	animation-delay: .15s;
+}
+.route-leave-active{
+	animation: goin .15s;
+	opacity: 0;
+}
+
+@keyframes coming {
+	from {
+		transform: translateX(20px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes goin {
+	from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	to{
+		transform: translateX(-20px);
+		opacity: 0;
+	}
+}

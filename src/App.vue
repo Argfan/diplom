@@ -2,16 +2,17 @@
   <div id="app" 
     class="app is-primary" 
     :class="{ 'is-folded':  ISFOLDED}"
-  >
-    <router-view />
+  >  
+    <router-view />    
   </div>
+  
 </template>
 
 <script>
 import {mapGetters} from 'vuex'
 
 export default {
-  name: 'App', 
+  name: 'App',   
   computed: {
     ...mapGetters([
       'ISFOLDED'

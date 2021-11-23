@@ -18,15 +18,28 @@
               <span class="title">Пользователи</span>
             </router-link>
           </li>
-
+  {{test[0].name}}
 
         </ul>
       </div>
     </div>
 </template>
 <script>
+
+import axios from 'axios'
 export default {
-  name: 'MainSide'
+  name: 'MainSide',
+  data(){
+    return{
+      test: []
+    }
+  },
+  async created(){
+    let tt = await axios.get("https://base.oshsu.kg/kadr_test_q/app_test.php")
+
+      this.test = tt.data
+  }
+
 }
 </script>
 <style lang="">

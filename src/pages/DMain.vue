@@ -6,8 +6,9 @@
 
     
     <div class="page-container">
-
-      <router-view />
+      <transition name="route">
+        <router-view />
+      </transition>
 
       <!-- Footer START -->
       <footer class="footer">

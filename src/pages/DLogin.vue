@@ -30,7 +30,7 @@
                     <div class="form-group">
                       <div class="d-flex align-items-center justify-content-center">
                         <!-- <button type="submit" class="btn btn-primary">Вход</button> -->
-                        <router-link type="submit" class="btn btn-primary" :to="{name: 'main'}">Вход</router-link>
+                        <router-link tag="button" type="submit" class="btn btn-primary" :to="{name: 'FirstContent'}">Вход</router-link>
                       </div>
                     </div>
                   </form>
