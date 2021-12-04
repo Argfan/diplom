@@ -17,12 +17,12 @@ export default new VueRouter({
       component: DLogin,
     },
     {
-      path: "/main",
+      path: "/",
       name: "main",
       component: DMain,
       children: [
         {
-          path: "",
+          path: "/main",
           name: "FirstContent",
           component: FirstContent,
         },

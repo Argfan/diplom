@@ -18,7 +18,7 @@
               <span class="title">Пользователи</span>
             </router-link>
           </li>
-  {{test[0].name}}
+  <!-- {{test[0].name}} -->
 
         </ul>
       </div>
@@ -26,7 +26,7 @@
 </template>
 <script>
 
-import axios from 'axios'
+// import axios from 'axios'
 export default {
   name: 'MainSide',
   data(){
@@ -35,9 +35,9 @@ export default {
     }
   },
   async created(){
-    let tt = await axios.get("https://base.oshsu.kg/kadr_test_q/app_test.php")
-
-      this.test = tt.data
+    // let tt = await axios.get("https://base.oshsu.kg/diplom_api/app.php")
+    // this.test = tt.data
+    // console.log(this.tes);
   }
 
 }
